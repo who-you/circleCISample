@@ -1,0 +1,16 @@
+machine:
+  environment:
+    XCODE_SCHEME: ciSample
+    XCODE_PROJECT: ciSample.xcodeproj
+    XCODE_TARGET: ciSample
+    APPNAME: ciSample
+    DEVELOPER_NAME: "iPhone Developer: Yuko Fujii (3LVMGJD9BE)"
+    PROFILE_NAME: "7c5f02c6-67b2-490a-ba10-d8c76933c381.mobileprovision"
+test:
+  override:
+    - xcodebuild
+        CODE_SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY=
+        PROVISIONING_PROFILE=
+        -project ciSample.xcodeproj -scheme ciSample -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
+        clean test
