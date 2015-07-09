@@ -1,7 +1,7 @@
 machine:
   environment:
     XCODE_SCHEME: ciSample
-    XCODE_PROJECT: ciSample.xcodeproj
+    XCODE_PROJECT: ciSample/ciSample.xcodeproj
     XCODE_TARGET: ciSample
     APPNAME: ciSample
     DEVELOPER_NAME: "iPhone Developer: Yuko Fujii (3LVMGJD9BE)"
@@ -12,5 +12,5 @@ test:
         CODE_SIGNING_REQUIRED=NO
         CODE_SIGN_IDENTITY=
         PROVISIONING_PROFILE=
-        -project ciSample.xcodeproj -scheme ciSample -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
+        -project ciSample/ciSample.xcodeproj -scheme ciSample -configuration Release -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
         clean test
