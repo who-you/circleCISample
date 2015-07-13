@@ -6,6 +6,8 @@ machine:
     APPNAME: ciSample
     DEVELOPER_NAME: "iPhone Developer: Yuko Fujii (3LVMGJD9BE)"
     PROFILE_NAME: "7c5f02c6-67b2-490a-ba10-d8c76933c381.mobileprovision"
+#pre:
+
 test:
   override:
     - xcodebuild
